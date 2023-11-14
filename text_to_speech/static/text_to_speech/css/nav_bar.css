@@ -1,0 +1,26 @@
+/* Стили для навигационного меню */
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+}
+
+/* Стили для ссылок в навигационном меню */
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+/* Стили для активной ссылки */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Стили при наведении на ссылку */
+.navbar a:hover {
+  background-color: #ddd;
+}

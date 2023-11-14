@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block style %}{% static 'text_to_speech/css/tts.css' %}{% endblock %}
+{% block content %}
+<div class="form-container">
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-row">
+      <label for="{{ form.text.id_for_label }}">Текст:</label>
+      {{ form.text }}
+    </div>
+    <div class="form-row">
+      <label for="{{ form.rate.id_for_label }}">Скорость:</label>
+      {{ form.rate }}
+    </div>
+    <div class="form-row">
+      <label for="{{ form.volume.id_for_label }}">Громкость:</label>
+      {{ form.volume }}
+    </div>
+    <div class="form-row">
+      <label for="{{ form.dictor.id_for_label }}">Диктор:</label>
+      {{ form.dictor }}
+    </div>
+    {{ media_file }}
+    <input type="submit" value="Преобразовать">
+  </form>
+</div>
+{% endblock %}

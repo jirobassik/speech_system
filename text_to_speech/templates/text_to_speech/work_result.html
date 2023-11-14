@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block style %}{% static 'text_to_speech/css/res_tts.css' %}{% endblock %}
+{% block content %}
+    <div class="content-block">
+        <figure>
+            <figcaption>Результат работы</figcaption>
+            <audio controls>
+                <source src="{{ audio }}" type="audio/mpeg">
+            </audio>
+        </figure>
+    </div>
+{% endblock %}

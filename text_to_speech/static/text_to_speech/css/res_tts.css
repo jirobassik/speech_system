@@ -1,0 +1,30 @@
+.content-block {
+  margin-top: 20px;
+}
+
+/* Стили для фигуры */
+.content-block figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для заголовка фигуры */
+.content-block figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Стили для аудио элемента */
+.content-block audio {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Стили для ошибок валидации формы */
+.content-block .error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}
